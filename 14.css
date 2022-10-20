@@ -179,6 +179,7 @@ body {
 	box-shadow: 5px 7px 15px 2px rgba(82, 90, 101,0.12);
 	padding-left: 20px;
 	padding-top: 30px;
+	padding-bottom: 50px;
 }
 .main__2-1 ~ .main__2-1 {
 	margin-left: 20px;
@@ -313,7 +314,12 @@ body {
 	padding-left: 30px;
 	border-bottom: 2px solid #ff9800;
 }
-.main3__1-2-1 > h1{
+.main3__1-2-1 > h2{
+	color: transparent;
+	font-family: Dosis, sans-serif;
+	background-image: url("https://cutesolution.com/html/Techvio/assets/img/slider-2.jpg");
+	-webkit-background-clip: text;	
+	background-position: 54% 49%;
 	margin: 0;
 	font-size: 70px;
 	padding: 0;
@@ -367,7 +373,9 @@ body {
 	justify-content: space-between;
 }
 .main4-3 > a {
+	position: relative;
 	display: block;
+	cursor: default;
 	width: 45%;
 	padding: 20px 0 20px 15px;
 	border-radius: 5px;
@@ -377,16 +385,33 @@ body {
 	font-size: 15px;
 	font-weight: 900;
 }
+.main4-3 >a::before {
+	content: "";
+	position: absolute;
+	border-radius: 5px;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	transition: .8s;
+	opacity: 0;
+	z-index: -1;
+}
 @keyframes anima3 {
-	to {
+	from {
+		width: 1%;
 		background-color: #7b68ee;
-		color: white;
+	}
+	to {
+		
+		background-color: #7b68ee;width: 100%;
 	}
 }
-.main4-3 > a:hover {
-	animation : anima3;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
+
+.main4-3 > a:hover::before {
+	opacity: 1;
+	background-color: #7b68ee;
+	width: 100%;
 }
 .main4-3 ~ .main4-3 {
 	margin-top: 15px;
@@ -417,21 +442,32 @@ body {
 	justify-content : space-between;
 }
 .main5-1-1 > a {
+	position: relative;
 	display: block;
 	width: 45%;
 	color: black;
 	border-left: 2px solid #7b68ee;
 	border-radius: 5px;
 	padding: 20px 0 20px 15px;
+	box-sizing: border-box;
 	font-size: 18px;
 	font-weight: 900;
 	letter-spacing: 0.7px;
 }
-
-.main5-1-1 > a:hover {
-	animation : anima3;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
+.main5-1-1 > a::before {
+	position: absolute;
+	border-radius: 5px;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 100%;
+	transition: 0.8s;
+	z-index: -1;
+}
+.main5-1-1 > a:hover::before {
+	width: 100%;
+	background-color: #7b68ee;
 }
 .main5-1-1 ~ .main5-1-1 {
 	margin-top: 15px;
@@ -447,7 +483,6 @@ body {
 	display: flex;
 	background-image: url("https://cutesolution.com/html/Techvio/assets/img/banner-bg.jpg");	
 	height: 301px;
-	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center 70%;
 	background-attachment: fixed;
@@ -809,22 +844,22 @@ footer {
 	color: white;
 	margin-right: 10px;
 }
+.footer1_2 {
+	display: flex;
+}
 .footer1_2 > input {
 	background-color: white;
 	margin-top: 10px;
 	width: 60%;
-	padding-left: 10px;
-	min-width: 225px;
+	padding-left: 20px;	
 	height: 50px;
 	border-radius: 5px;
 	border: none;
 	outline: none;
-	padding-left: 3px;
 }
 .footer1_2 > button {
 	position: relative;
 	width: 30%;
-	min-width: 111px;
 	height: 52px;
 	background-color: #7b68ee;
 	border-radius: 5px;
@@ -1198,13 +1233,21 @@ footer a {
 	}
 }
 @media (max-width: 767px) {
+	.navbar2__2 > img {
+		width: 80%;
+		height: 500px;
+	}
 	.main__2-1 {
 		width: 100%;
+	}
+	.main__3 {
+		margin-bottom: 0;
 	}
 	.main3__1 {
 		flex-wrap: wrap;
 	}
 	.main3__1-1 {
+		margin-right: 0;
 		margin-bottom: 50px;
 	}
 	.main3__1-1, .main3__1-2 {
@@ -1215,6 +1258,13 @@ footer a {
 		width: 208px;
 		top: -250px;
 		left: 50px;
+	}
+	.main4, .main5 {
+		margin-left: 20px;
+		margin-bottom: 50px;
+	}
+	.main4-1 > img {
+		width: 100%;
 	}
 	.main4-3 {
 		flex-wrap: wrap;
@@ -1237,9 +1287,7 @@ footer a {
 		margin-top: 0;
 	}
 	.main6 {
-		box-sizing: content-box;
-		height: 525px;
-		padding: 100px 0;
+		height: 725px;
 		margin-bottom: 120px;
 	}
 	.main6::after {
@@ -1292,5 +1340,27 @@ footer a {
 	.footer2_1 ~ .footer2_2, .footer2_1 ~ .footer2_1 {
 		margin-left: 0;
 		margin-top: 20px;
+	}
+	.footer1_2 {
+		flex-direction: column;
+	}
+	.footer1_2 > button {
+		width: 30%;
+		left: 0;
+		margin-top: 20px;
+	}
+	.main10 > p:nth-child(2) {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+	}
+	.main10 > p:nth-child(3) {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		font-size: 15px;
+		box-sizing: border-box;
+		padding: 0 10px;
 	}
 }
