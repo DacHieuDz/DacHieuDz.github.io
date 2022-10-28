@@ -1134,6 +1134,7 @@ footer {
 	display: block;
 }
 .navbar__4 {
+	margin-right: 15px;
 	display: none;
 }
 .navbar__4 > a {
