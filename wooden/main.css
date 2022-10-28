@@ -23,7 +23,7 @@ body {
 }
 .section {
 	background-image: linear-gradient(rgba(243,129,129,0.9), rgba(255,227,138,0.9)),
-	url("http://mogo.thayloc.com/images/home/background.jpg");
+	url("image/daibang.jpg");
 }
 .header {
 	position: fixed;
@@ -232,6 +232,7 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 0;
+	right: 0;
 	transform: translate(0, -50%);
 	color: white;
 	display: none;
@@ -368,7 +369,7 @@ body {
 .main__beautiful {
 	padding-top: 104px;
 	text-align: center;
-	background-image: url("http://mogo.thayloc.com/images/service/background.jpg");
+	background-image: url("image/daibang1.jpg");
 }	
 .main__beautiful > span {
 	font-family: Kaushan;
@@ -425,6 +426,10 @@ body {
 }
 .main__regular-item {
 	width: 45%;
+}
+.main__regular-item img {
+	width: 100%;
+	height: auto;
 }
 .main__regular-item-support {
 	margin-right: 30px; 
@@ -580,12 +585,19 @@ body {
 .main__meet-box {
 	position: absolute;
 	width: 100%;
-	height: 474px;
+	height: 100%;
 	top: 7px;
 	left: 7px;
 	background-color: #95e1d3;
 	opacity: 0;
 	z-index: -1;
+}
+.main__boxsing {
+	display: inline-block;
+	position: relative;
+}
+.main__box ~ .main__box {
+	margin-left: 20px;
 }
 .main__meet-item:hover::before {
 	opacity: 0.8;
@@ -614,6 +626,13 @@ body {
 	font-size: 15px;
 	color: #999;
 	font-weight: 500;
+}
+.main__box {
+	width: calc(100% / 3);
+}
+.main__box img {
+	width: 100%;
+	height: auto;
 }
 .main__hair {
 	padding: 67px 0 47px 0;
@@ -1249,17 +1268,9 @@ form button {
 		margin-left: 0;
 		margin-right: 0;
 	}
-	.main__meet-item {
-		margin: 0 15px;
-	}
 	.main__meet-item img {
 		width: 100%;
 		height: 100%;
-	}
-	.main__meet-box {
-		height: 343.42px;
-		width: 90%;
-		margin: 0 15px;
 	}
 	.main__hair {
 		margin: 0;
@@ -1416,6 +1427,9 @@ form button {
 	}
 	.main__box {
 		width: 100%;
+	}
+	.main__boxsing {
+		display: block;
 	}
 	.main__work-solve {
 		width: 100%;
