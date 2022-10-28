@@ -30,6 +30,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
+	padding: 10px 18px;
 	z-index: 1;
 	background-color: rgba(243,129,129,0.9);
 	display: flex;
