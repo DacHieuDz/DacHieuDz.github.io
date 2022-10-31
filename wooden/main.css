@@ -441,11 +441,12 @@ body {
 .main__regular-item-support {
 	margin-right: 30px; 
 }
-.main__regular-item > a {
+.main__regular-item a {
 	display: inline-block;
 	text-decoration: none;
 	text-align: left;
 	display: flex;
+	position: relative;
 	width: 100%;
 	padding: 12px 20px;
 	box-sizing: border-box;
@@ -456,13 +457,15 @@ body {
 	border-right: 1px solid #dfdfdf;
 	border-bottom: 2px solid #dfdfdf;
 }
-
+.main__regular-post {
+	position: relative;
+}
 .fa-image, .fa-rainbow, .fa-record-vinyl {
 	width: 10%;
 	font-size: 30px;
 	color: #95e1d3;
 }
-.main__regular-item > a  span {
+.main__regular-item a span {
 	width: 88%;
 	font-family: M-Regular;
 	color: #333;
@@ -470,7 +473,51 @@ body {
 	font-size: 13.5px;
 	padding-top: 6px;
 }
-.fa-chevron-down {
+.fa-chevron-up {
+	display: none !important;
+}
+.main__regular-text {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border: 1px solid;
+	border-color: #dfdfdf #dfdfdf #dfdfdf #dfdfdf;
+	padding: 20px;
+	text-align: left;
+	font-size: 15px;
+	color: #999;
+	height: 100px;
+	overflow-y: auto;
+	word-spacing: 2px;
+	font-family: R-LightItalic;
+	margin-bottom: 16px;
+	display: none;
+}
+.main__regular-text::-webkit-scrollbar {
+	width: 5px;
+}
+.main__regular-text::-webkit-scrollbar-thumb {
+	height: 5px;	
+	background-color: #95e1d3;
+	border-radius: 5px;
+}
+
+.main__regular-post:hover {
+	margin-bottom: 170px;
+}
+.main__regular-post:hover .main__regular-text {
+	display: block;
+}
+.main__regular-post:hover .fa-chevron-up {
+	display: block !important;
+}
+.main__regular-post:hover .fa-chevron-down {
+	display: none !important;
+}
+.main__regular-item > a:nth-child(1):hover .fa-chevron-down {
+	display: none !important;
+}
+.fa-chevron-down, .fa-chevron-up {
 	padding-top: 4px;
 	width: 2%;
 	color: #ccc;
@@ -1242,6 +1289,9 @@ form button {
 	.main__regular-item-support {
 		margin-right: initial;
 	}
+	.main__regular-text {
+		line-height: 30px;
+	}
 	.main__background {
 		padding-left: 0;
 		padding-right: 0;
@@ -1573,8 +1623,8 @@ form button {
 	.fa-chevron-down {
 		width: 5%;
 	}
-	.main__regular-item span {
-		width: 65% !important;
+	.fa-image-lite, .fa-record-vinyl-lite, .fa-rainbow-lite {
+		margin-right: 15px;
 	}
 	.main__hair > a {
 		width: calc(50% - 30px);
