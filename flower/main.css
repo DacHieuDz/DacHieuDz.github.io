@@ -2795,6 +2795,22 @@ footer {
 		font-size: 13.3px;
 		padding: 7px 25px 9px;
 	}
+		.main__choose-footer {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.main__choose-icon-item {
+		width: calc(50% - 30px);
+	}
+	.icon__choose-first, .icon__choose-two {
+		font-size: 30px;
+	}
+	.main__choose-footer-item:last-child {
+		margin-top: 40px;
+	}
+	.main__choose-footer .main__choose-footer-item {
+		width: 100%;
+	}
 	.main__choose-body-item h2 {
 		font-size: 24px;
 		line-height: 27px;
@@ -2905,15 +2921,5 @@ footer {
 		left: initial;
 		width: 730px;
 		top: -154px;
-	}
-	.main__choose-footer {
-		flex-wrap: wrap;
-		text-align: center;
-	}
-	.main__choose-footer-item:last-child {
-		margin-top: 40px;
-	}
-	.main__choose-footer .main__choose-footer-item {
-		width: 100%;
 	}
 }
