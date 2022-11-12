@@ -2906,4 +2906,14 @@ footer {
 		width: 730px;
 		top: -154px;
 	}
+	.main__choose-footer {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.main__choose-footer-item:last-child {
+		margin-top: 40px;
+	}
+	.main__choose-footer .main__choose-footer-item {
+		width: 100%;
+	}
 }
