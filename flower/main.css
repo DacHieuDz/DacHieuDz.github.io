@@ -2900,4 +2900,10 @@ footer {
 	.subscribe__body button {
 		right: 6%;
 	}
+	.main__techno::before {
+		right: 0;
+		left: initial;
+		width: 730px;
+		top: -154px;
+	}
 }
