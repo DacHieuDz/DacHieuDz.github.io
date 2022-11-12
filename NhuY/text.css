@@ -1,0 +1,105 @@
+@font-face {
+	font-family: Kaushan;
+	src: url("KaushanScript-Regular.ttf");
+}
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+body {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-position: 31% 72%;
+	background-color: #ecf0f1;
+	background-blend-mode: multiply; 
+	background-image: url("312564373_440110028231392_8145604857578126271_n.jpg");
+	animation: 1s ease-in-out 0.25s infinite alternate scale;
+}
+.heart {
+	display: flex;
+	align-items: center;
+	font-family: Kaushan;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	background-color: #2f3542;
+	transform: rotate(45deg);
+}
+.heart::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background-color: #2f3542;
+	border-radius: 50%;
+}
+.heart::after {
+	content: "";
+	position: absolute;
+	top: -50%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2f3542;
+	border-radius: 50%;
+}
+span {
+	position: absolute;
+	font-family: Kaushan;
+	display: block;
+	font-size: 36px;
+	z-index: 1;
+	padding-top: 50px;
+	top: 34%;
+	color: #ff6b81;
+}
+@media (max-width: 1199px){
+	.heart {
+		width: 260px;
+		height: 260px;
+	}
+	span {
+		top: 35%;
+	}
+}
+@media (max-width: 991px){
+	span {
+		font-size: 30px;
+	}
+}
+@media (max-width: 766px){
+	.heart {
+		width: 200px;
+		height: 200px;
+	}
+	span {
+		top: 32%;
+	}
+}
+@media (max-width: 575px){
+	span {
+		top: 34%;
+		font-size: 20px;
+
+	}
+	.heart {
+		width: 120px;
+		height: 120px;
+	}
+	body {
+				background-position: 31% 64%;
+	}
+}
