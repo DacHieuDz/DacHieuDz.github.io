@@ -160,7 +160,7 @@
     opacity: 1; }
 
 .tiltle__main > h2 {
-  font-size: 42px;
+  font-size: 40px;
   line-height: 50.39px;
   margin: 0 0 0;
   padding: 0 0 0; }
@@ -443,8 +443,8 @@
   .say__effect {
     margin-inline: auto; }
   .say .say__box {
-    width: 46%;
-    margin-inline: auto; }
+    margin: 55px auto 150px;
+    width: 46%; }
     .say .say__box > p {
       margin-bottom: 16px; }
     .say .say__box .say__face {
