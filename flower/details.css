@@ -4,6 +4,9 @@
 @font-face {
   font-family: Muli;
   src: url("font/Muli.ttf"); }
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: Muli; }
