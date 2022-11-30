@@ -213,7 +213,7 @@
 .agency {
   position: relative;
   overflow: hidden;
-  background-image: url("C:/Users/Administrator/Desktop/Web2/image/image-index/slider-bg1.jpg");
+  background-image: url("../image/image-index/slider-bg1.jpg");
   background-size: cover;
   background-position: center; }
   .agency__row {
