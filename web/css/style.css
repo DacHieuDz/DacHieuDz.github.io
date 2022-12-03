@@ -40,7 +40,7 @@
     top: -28px;
     width: 63px;
     height: 63px;
-    background-image: url("C:/Users/Administrator/Desktop/Web2/image/image-index/section1.png"); }
+    background-image: url("../image/image-index/section1.png"); }
 
 .clear {
   clear: both; }
@@ -311,7 +311,8 @@
       margin: 10px 0 14px; }
     .agency__body-social {
       position: absolute;
-      top: 10%;
+      height: 100%;
+      top: 0%;
       left: -25px;
       writing-mode: vertical-lr; }
       .agency__body-social a {
@@ -320,7 +321,7 @@
         font-size: 13px;
         padding: 7.5px 6px;
         color: white;
-        margin: 11px 0;
+        margin: 10px 0;
         border-radius: 50%;
         border: 1px solid white;
         transition: all 0.5s ease-in-out; }
@@ -2848,5 +2849,10 @@
       color: #33354b; }
   .top .check__item p {
     padding-bottom: 5px; }
+
+@media (max-width: 1199px) {
+  .gets__body-tiltle h2 {
+    font-size: 35px;
+    line-height: 42px; } }
 
 /*# sourceMappingURL=style.css.map */
