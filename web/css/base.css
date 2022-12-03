@@ -72,6 +72,7 @@ body::-webkit-scrollbar-thumb:hover {
 	width: 50%;	
 }
 .col__xl-4 {
+	position: relative;
 	padding: 0 15px;
 	width: calc(100% / 3);	
 }
