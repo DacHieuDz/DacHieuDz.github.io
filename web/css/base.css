@@ -535,11 +535,23 @@ body::-webkit-scrollbar-thumb:hover {
 		padding: 0 15px;
 		width: 50%;
 	}
+	.col__sm-4 {
+		padding: 0 15px;
+		width: calc(100% / 3);
+	}
 }
 @media (max-width: 575px) {
 	.col__xs-4 {
 		padding: 0 15px;
 		width: calc(100% / 3);
+	}
+	.col__xs-6 {
+		padding: 0 15px;
+		width: 50%;
+	}
+	.col__xs-12 {
+		padding: 0 15px;
+		width: 100%;
 	}
 	.col__xs-3 {
 		padding: 0 15px;
