@@ -3391,5 +3391,58 @@
     line-height: 38.39px; }
   .match__body-paragraph p {
     font-size: 24px; } }
+.dagency {
+  padding: 100px 0 80px; }
+  .dagency__body {
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out; }
+    .dagency__body-img a {
+      display: block; }
+      .dagency__body-img a img {
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        vertical-align: middle;
+        filter: grayscale(100%); }
+    .dagency__body-box {
+      position: relative;
+      padding: 22px 30px 30px;
+      box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.12); }
+      .dagency__body-box::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10%;
+        height: 52px;
+        border-left: 2px solid #FF0000; }
+    .dagency__body-box-link a {
+      text-decoration: none;
+      display: block;
+      width: fit-content;
+      font-size: 18px;
+      line-height: 28px;
+      transition: all 0.5s ease-in-out; }
+      .dagency__body-box-link a:first-child {
+        color: #33354b;
+        font-weight: 600; }
+      .dagency__body-box-link a:last-child {
+        color: #616161;
+        font-weight: 500; }
+      .dagency__body-box-link a:hover {
+        color: #ED2C41; }
+    .dagency__body-box-tiltle a {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      color: #151423;
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 900;
+      transition: all 0.5s ease-in-out; }
+      .dagency__body-box-tiltle a:hover {
+        color: #ED2C41; }
+    .dagency__body:hover {
+      box-shadow: 6px 5px 30px rgba(0, 0, 0, 0.12); }
+      .dagency__body:hover img {
+        filter: grayscale(0); }
 
 /*# sourceMappingURL=style.css.map */
