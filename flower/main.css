@@ -759,6 +759,11 @@
 		bottom: -80px;
 	}
 }
+@keyframes moveup__first-xs {
+	to {
+		bottom: -44%;
+	}
+}
 @keyframes moveup__second {
 	to {
 		top: 47%;
@@ -2360,8 +2365,12 @@ footer {
 	.body__info-item {
 		position: relative;
 	}
+	.body__frames-text {
+		text-align: left;
+	}
 	.body__frames-img {
-		width: 18%;
+		width: 30%;
+		margin-right: 8px;
 	}
 	.body__frames-text a:first-child {
 		line-height: 25px;
@@ -2447,6 +2456,13 @@ footer {
 	.arrow-blue img {
 		width: 50%;
 	}
+	.main__need-img-roket {
+		right: -60px;
+	}
+	.main__need-img-man {
+		bottom: -50%;
+		animation: 1.2s linear infinite alternate moveup__first-xs;
+	}
 	.main__feature-body h2 {
 		font-size: 24px;
 	}
@@ -2465,10 +2481,15 @@ footer {
 		text-align: center;
 	}
 	.main__choose-icon-item {
-		width: calc(50% - 30px);
+		width: 50%;
 	}
 	.icon__choose-first, .icon__choose-two {
 		font-size: 30px;
+		margin-right: 0;
+	}
+	.main__choose-icon-item span {
+		margin-left: 12px;
+		font-size: 12px;
 	}
 	.main__choose-footer-item:last-child {
 		margin-top: 40px;
@@ -2487,6 +2508,12 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		font-size: 15px;
+	}
+	.main__image {
+		padding: 0 15px;
+	}
+	.main__image-item {
+		margin-inline: 0;
 	}
 	.main__techno-body > h2 {
 		font-size: 24px;
@@ -2519,7 +2546,7 @@ footer {
 		width: 100%;
 	}
 	.main__need-body span:first-child, .main__need-body span:nth-child(2) {
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 21px;
 	} 
 	@keyframes movem__6 {
@@ -2572,6 +2599,9 @@ footer {
 	.blog__name-logo, .blog__name-link {
 		width: initial;
 	}
+	.subscribe__body {
+		padding-inline: 30px;
+	}
 	.subscribe__body h2 {
 		font-size: 24px;
 	}
@@ -2581,10 +2611,21 @@ footer {
 	.subscribe__body button {
 		right: 6%;
 	}
+	.subscribe__body input {
+		margin-left: 0;
+	}
+	.subscribe__body button {
+		margin-top: 20px;
+		position: static;
+		transform: translateY(0);
+	}
 	.main__techno::before {
 		right: 0;
 		left: initial;
 		width: 730px;
 		top: -154px;
+	}
+	.blog__name-link {
+		padding-left: 36px;
 	}
 }

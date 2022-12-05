@@ -2,6 +2,9 @@
 	font-family: Muli;
 	src: url("font/Muli.ttf");
 }
+* {
+	box-sizing: border-box;
+}
 :root {
 	--first-color: #00247e;
 	--second-color: #33baff;
