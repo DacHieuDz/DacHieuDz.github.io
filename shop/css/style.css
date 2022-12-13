@@ -1618,7 +1618,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .advice__body-text {
     right: initial;
-    left: 160px; }
+    left: 56%; }
     .advice__body-text h2 {
       font-size: 18px;
       line-height: 18px; }
