@@ -715,6 +715,8 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 1;
   padding-bottom: 80px; }
+  .work__team {
+    padding-top: 90px; }
   .work .distance .title h2 {
     margin-top: 0; }
   .work__img {
