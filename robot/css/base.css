@@ -202,7 +202,10 @@ body::-webkit-scrollbar-thumb {
     padding: 0 15px; }
 
   .pt-40-sm {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+
+  .col-sm-none {
+    display: none; } }
 @media (max-width: 35.9375em) {
   .container {
     width: 100%; }
