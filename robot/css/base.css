@@ -144,6 +144,9 @@ body::-webkit-scrollbar-thumb {
 .pb-34 {
   padding-bottom: 34px; }
 
+.pt-50 {
+  padding-top: 50px; }
+
 @media (max-width: 74.9374em) {
   .container {
     max-width: 960px; }
@@ -153,6 +156,11 @@ body::-webkit-scrollbar-thumb {
 
   .col-lg-10 {
     width: calc(1000% / 12);
+    position: relative;
+    padding: 0 15px; }
+
+  .col-lg-4 {
+    width: calc(100% / 3);
     position: relative;
     padding: 0 15px; } }
 @media (max-width: 61.9375em) {
