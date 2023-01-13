@@ -1434,8 +1434,18 @@ h1, h2, h3, span, th {
     .top .paragraph__first p {
       width: 82%; } }
 @media (max-width: 47.9375em) {
-  .menu__list {
-    display: none; }
+  .menu {
+    text-align: initial; }
+    .menu .container {
+      display: flex;
+      align-items: center; }
+    .menu__logo {
+      width: 50%; }
+    .menu__link {
+      width: 50%;
+      text-align: right; }
+    .menu__list {
+      display: none; }
 
   .theme .theme__body-title h1 {
     font-size: 20px;

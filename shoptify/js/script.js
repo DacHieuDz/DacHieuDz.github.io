@@ -2,6 +2,15 @@ var checkPageButton = document.querySelectorAll("#page .page__nav button");
 var pageBody = document.querySelector(".page__body");
 checkPageButton = [...checkPageButton];
 
+var menuElement = document.querySelector(".menu");
+console.log(menuElement);
+window.onscroll = function() {
+	if(document.documentElement.scrollTop >= 158) {
+		menuElement.style.backgroundColor = "#718093";
+	}else {
+		menuElement.style.backgroundColor = "transparent";
+	}
+}
 for(let i=0;i<checkPageButton.length;i++) {
 	checkPageButton[i].onclick = function() {
 		if(i == 0) {
